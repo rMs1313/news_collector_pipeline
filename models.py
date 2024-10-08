@@ -8,7 +8,6 @@ class Article(Base):
     
     id = Column(Integer, primary_key=True)
     title = Column(String(255), nullable=False)
-    content = Column(Text, nullable=False)
     publication_date = Column(DateTime, nullable=False)
     source_url = Column(String(255), unique=True, nullable=False)
     category = Column(String(100))  # Category after classification (e.g., Terrorism, Natural Disaster)

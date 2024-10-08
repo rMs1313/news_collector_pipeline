@@ -20,21 +20,11 @@ logger = logging.getLogger(__name__)
 
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
+from database import Session
 
 # Celery Configuration
 app = Celery('tasks', broker='redis://localhost:6379/0')  # Assuming you use Redis as the broker
 
-# Database Configuration
-username = 'root'
-password = '1313'
-host = 'localhost'
-port = '3305'
-database_name = 'news_collector'
-DATABASE_URI = f'mysql://{username}:{password}@{host}:{port}/{database_name}'
-
-# Create database engine and session
-engine = create_engine(DATABASE_URI)
-Session = sessionmaker(bind=engine)
 
 # Load English stopwords
 stop_words = set(stopwords.words('english'))
