@@ -76,7 +76,6 @@ The project uses SQLAlchemy for database interaction. The Article model is defin
 
 - id: Primary key
 - title: Title of the article
-- content: Content of the article
 - publication_date: Date and time of publication
 - source_url: Unique URL of the article
 - category: Classified category of the article
