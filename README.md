@@ -1,0 +1,1 @@
+# news_collector_pipeline
