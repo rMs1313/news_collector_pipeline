@@ -30,8 +30,8 @@ pip install sqlalchemy feedparser python-dateutil nltk redis celery
 ## Installation
 1. Clone the Repository: If you haven't already cloned your repository, do so using:
 ```bash
-git clone https://github.com/username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/rMs1313/news_collector_pipeline.git
+cd news_collector_pipeline
 ```
 
 2. Set Up a Virtual Environment (optional): Create a virtual environment and activate it:
